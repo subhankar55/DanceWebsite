@@ -1,0 +1,23 @@
+{
+  "name": "yo-yo-dance-academy",
+  "version": "1.0.0",
+  "description": "This is a dance website webpage",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/subhankar55/DanceWebsite.git"
+  },
+  "author": "Subhankar Maiti",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/subhankar55/DanceWebsite/issues"
+  },
+  "homepage": "https://github.com/subhankar55/DanceWebsite#readme",
+  "dependencies": {
+    "express": "^5.1.0",
+    "pug": "^3.0.3"
+  }
+}
