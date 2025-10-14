@@ -2,9 +2,20 @@ doctype html
 html 
     head 
         title This is title 
-        //- include style.css
+        style 
+            include ../static/style.css 
+        //- By default app.js search the file inside the views folder, but since we have kept this inside the static folder so first of all we should come out of the file where we are. For this purpose we have '../' operator. This will help us to come out of the existing directory . Then we must write the target directory name , where we want to enter.
     body 
         h1 Yo-Yo Dance School 
         h3= message 
-        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat dignissimos facere atque voluptatum necessitatibus laudantium vitae veniam pariatur praesentium tempora ducimus voluptate deleniti delectus, saepe suscipit animi consequuntur. Consequuntur, veritatis.
+        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat dignissimos.
+        nav#navbar 
+            ul 
+                li Home 
+                li About 
+                li Services 
+                li classInfo 
+                li Contact Us
+        script 
+            include ../static/script.js 
 
