@@ -1,6 +1,5 @@
 const express = require("express");
 const path = require("path");
-const fs = require("fs");
 const app = express();
 
 const port = 80;
@@ -14,3 +13,12 @@ app.use(express.urlencoded());
 app.set('view engine', 'pug');
 // To join the current directory with the folder 'Views' under 'views' built-in express setting
 app.set('views',path.join(__dirname,'Views'));
+
+app.get('/',(req,res)=>{
+    const params = {message :'The best dance school in delhi'};
+    res.status(200).render('index',params);
+});
+
+app.listen(port, ()=>{
+    console.log(`The application have started successfully. on port ${port}`);
+})
