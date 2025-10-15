@@ -5,17 +5,22 @@ html
         style 
             include ../static/style.css 
         //- By default app.js search the file inside the views folder, but since we have kept this inside the static folder so first of all we should come out of the file where we are. For this purpose we have '../' operator. This will help us to come out of the existing directory . Then we must write the target directory name , where we want to enter.
+
     body 
-        h1 Yo-Yo Dance School 
-        h3= message 
-        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat dignissimos.
         nav#navbar 
             ul 
-                li Home 
-                li About 
-                li Services 
-                li classInfo 
-                li Contact Us
+                li #[a(href="/") Home]
+                li #[a(href="/") About]
+                li #[a(href="/") Services]
+                li #[a(href="/") classInfo]
+                li #[a(href="/") Contact Us]
+        section#introSection 
+            div  Welcome to Yo-Yo Dance School
+            div  Eat Sleep Dance Repeat 
+        section#sponsorsSection 
+            | section for sponsors 
+        footer#footer 
+            | our footer here   
         script 
             include ../static/script.js 
 

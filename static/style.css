@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Lacquer&family=Yeon+Sung&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Lacquer&family=Yeon+Sung&family=ZCOOL+QingKe+HuangYou&display=swap');
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+}
+#navbar{
+    background-color: rgb(1, 1, 1);
+    padding: 14px 62px;
+    font-family: "Yeon Sung", system-ui;
+    
+}
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#navbar li{
+    list-style: none;
+}
+
+#navbar li a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 25px;
+}
+
+#introSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: center / cover no-repeat url("/static/DanceImage.webp");
+    height: 300px;
+    background-color: red;
+    font-family: "ZCOOL QingKe HuangYou", sans-serif;
+    font-size: 3rem;
+}
+
+#sponsorsSection{
+    height: 300px;
+    background-color: yellow;
+}
+
+#footer{
+    height: 100px;
+}
