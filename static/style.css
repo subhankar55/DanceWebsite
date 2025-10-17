@@ -9,7 +9,6 @@
     background-color: rgb(215, 51, 51);
     padding: 14px 62px;
     font-family: "Yeon Sung", system-ui;
-    
 }
 #navbar ul{
     display: flex;
@@ -36,14 +35,34 @@
     align-items: center;
     color: white;
     background: center / cover no-repeat url("/static/DanceImage.webp");
-    height: 300px;
+    height: 600px;
     background-color: rgb(220, 76, 76);
     font-family: "ZCOOL QingKe HuangYou", sans-serif;
-    font-size: 3rem;
+    font-size: 6rem;
     padding-bottom: 27px;
 }
 #introSection div.small{
     font-size: 2rem;
+}
+#missionSection{
+    height: 300px;
+    background-color: #ede1df;
+    font-family: "ZCOOL QingKe HuangYou", sans-serif;
+}
+#missionSection h3{
+    text-align: center;
+    padding-top: 12px;
+}
+.card{
+    border: 2px solid black;
+    border-radius: 12px;
+    width: 32%;
+    margin: 5px;
+    height: 233px;
+    display: inline-block;
+}
+.card p{
+    padding: 8px;
 }
 #sponsorsSection{
     height: 300px;
