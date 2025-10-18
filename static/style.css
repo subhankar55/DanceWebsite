@@ -45,13 +45,16 @@
     font-size: 2rem;
 }
 #missionSection{
+    margin: auto;
     height: 300px;
-    background-color: #ede1df;
+    width: 75%;
+    background-color: white;
     font-family: "ZCOOL QingKe HuangYou", sans-serif;
 }
 #missionSection h3{
     text-align: center;
     padding-top: 12px;
+    font-size: 2rem;
 }
 .card{
     border: 2px solid black;
@@ -60,18 +63,20 @@
     margin: 5px;
     height: 233px;
     display: inline-block;
+    background-color: #fdf6f4;
 }
 .card p{
     padding: 8px;
 }
 #sponsorsSection{
     height: 300px;
-    background-color: #ad8d87;
+    background-color: #ecd8d2;
     font-family: "ZCOOL QingKe HuangYou", sans-serif;
 }
 #sponsorsSection h3{
     text-align: center;
     padding-top: 12px;
+    font-size: 2rem;
 }
 #footer{
     height: 100px;
