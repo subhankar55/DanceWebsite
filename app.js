@@ -16,7 +16,7 @@ app.set('views',path.join(__dirname,'Views'));
 
 app.get('/',(req,res)=>{
     const params = {message :'The best dance school in delhi'};
-    res.status(200).render('index',params);
+    res.status(200).render('Home',params);
 });
 
 app.listen(port, ()=>{
