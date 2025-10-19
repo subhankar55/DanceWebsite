@@ -104,11 +104,31 @@
     background-color: #ecd8d2;
     font-family: "ZCOOL QingKe HuangYou", sans-serif;
 }
+#sponsors{
+    height: 120px;
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.spImage{
+    height: 80%;
+    margin: 20px;
+}
 #sponsorsSection h3{
     text-align: center;
     padding-top: 12px;
     font-size: 2rem;
 }
 #footer{
-    height: 100px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-family: 'Yeon Sung';
 }
