@@ -1,5 +1,6 @@
 const express = require("express");
 const path = require("path");
+const fs = require("fs");
 const app = express();
 
 const port = 80;
@@ -18,6 +19,23 @@ app.get('/',(req,res)=>{
     const params = {message :'The best dance school in delhi'};
     res.status(200).render('Home',params);
 });
+
+app.get('/Contact',(req,res)=>{
+    const params = {message :'The best dance school in delhi'};
+    res.status(200).render('Contact',params);
+});
+
+app.post('/Contact',(req,res)=>{
+    let name = req.body.name;
+    let phone = req.body.phone;
+    let email = req.body.email;
+    let address = req.body.address;
+    let desc = req.body.desc;
+    let op = `Client details: \n Name : ${name} \n Phone Number : ${phone} \n Email id : ${email} \n Address : ${address} \n Concern : ${desc}`;
+    fs.writeFileSync('output.txt',op);
+    console.log(req.body);
+    res.status(200).render('Home');
+})
 
 app.listen(port, ()=>{
     console.log(`The application have started successfully. on port ${port}`);
