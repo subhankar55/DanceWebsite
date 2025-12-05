@@ -18,6 +18,7 @@
   "homepage": "https://github.com/subhankar55/DanceWebsite#readme",
   "dependencies": {
     "express": "^5.1.0",
+    "mongoose": "^9.0.0",
     "pug": "^3.0.3"
   },
   "devDependencies": {
